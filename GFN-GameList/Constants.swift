@@ -13,6 +13,7 @@ struct K {
     static var labelGames  = "games"
     static var labelGame  = "game"
     static var cellIdentifier = "Cell"
+    static var gameCellIdentifier = "GameCell"
     static var optimized = "Optimized : "
     static var supported = "Highlights supported : "
     static var appTitle = "GFN-GameList"

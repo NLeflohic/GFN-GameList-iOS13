@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2200124923F434B000A6EA57 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2200124823F434B000A6EA57 /* WebViewController.swift */; };
+		2246401B23FEE47E0000D7C6 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2246401A23FEE47E0000D7C6 /* TableViewCell.swift */; };
 		224F4C4223F3030100498E91 /* GameRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224F4C4123F3030100498E91 /* GameRealm.swift */; };
 		22D997CA23F2C45B00EACA14 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D997C923F2C45B00EACA14 /* InitialViewController.swift */; };
 		22E8058E23F2B9B600D3F395 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E8058D23F2B9B600D3F395 /* AppDelegate.swift */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		2200124823F434B000A6EA57 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		2246401A23FEE47E0000D7C6 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		224F4C4123F3030100498E91 /* GameRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRealm.swift; sourceTree = "<group>"; };
 		2253AF1E23F4675400BEDA2D /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2253AF2123F4675A00BEDA2D /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,6 +129,7 @@
 				22FF1A4F23F2E87300A0AC0F /* GameDetailController.swift */,
 				22D997C923F2C45B00EACA14 /* InitialViewController.swift */,
 				2200124823F434B000A6EA57 /* WebViewController.swift */,
+				2246401A23FEE47E0000D7C6 /* TableViewCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 				22E8058E23F2B9B600D3F395 /* AppDelegate.swift in Sources */,
 				22D997CA23F2C45B00EACA14 /* InitialViewController.swift in Sources */,
 				22E805A923F2BFAE00D3F395 /* GameListManager.swift in Sources */,
+				2246401B23FEE47E0000D7C6 /* TableViewCell.swift in Sources */,
 				22E8059023F2B9B600D3F395 /* SceneDelegate.swift in Sources */,
 				224F4C4223F3030100498E91 /* GameRealm.swift in Sources */,
 				22FF1A5023F2E87300A0AC0F /* GameDetailController.swift in Sources */,

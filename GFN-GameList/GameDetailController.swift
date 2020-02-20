@@ -25,6 +25,7 @@ class GameDetailController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tableView.rowHeight = 55;
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -32,8 +33,9 @@ class GameDetailController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: K.cellIdentifier, for: indexPath)
-        cell.textLabel?.text = currentDetailGameList?[indexPath.row].title ?? ""
+        let cell = tableView.dequeueReusableCell(withIdentifier: K.gameCellIdentifier, for: indexPath) as! TableViewCell
+//        cell.textLabel?.text = currentDetailGameList?[indexPath.row].title ?? ""
+        cell.title.text = currentDetailGameList?[indexPath.row].title ?? ""
         var optimizedStr = ""
         var colorCode = 0
         if let optimized = currentDetailGameList?[indexPath.row].isFullyOptimized {
@@ -52,16 +54,25 @@ class GameDetailController: UITableViewController {
             }
         }
         
-        cell.detailTextLabel?.text = "\(optimizedStr) \n \(highLightsStr)"
-        cell.detailTextLabel?.numberOfLines = 0
+        //cell.detailTextLabel?.text = "\(optimizedStr) \n \(highLightsStr)"
+        //cell.detailTextLabel?.numberOfLines = 0
+        cell.subtitle.text = "\(optimizedStr)          \(highLightsStr)"
+        cell.subtitle.numberOfLines = 0
         if colorCode == 2 {
-            cell.backgroundColor = UIColor(red:0.00, green:0.72, blue:0.58, alpha:1.0)
+//            cell.backgroundColor = UIColor(red:0.00, green:0.72, blue:0.58, alpha:1.0)
+            cell.imageDot.backgroundColor = UIColor(red:0.00, green:0.72, blue:0.58, alpha:1.0)
         }
         else if colorCode == 0 {
-            cell.backgroundColor = UIColor(red:0.84, green:0.19, blue:0.19, alpha:1.0)
+            //cell.backgroundColor = UIColor(red:0.84, green:0.19, blue:0.19, alpha:1.0)
+            cell.imageDot.backgroundColor = UIColor(red:0.84, green:0.19, blue:0.19, alpha:1.0)
         } else {
-            cell.backgroundColor = UIColor(red:1.00, green:0.46, blue:0.46, alpha:1.0)
+            //cell.backgroundColor = UIColor(red:1.00, green:0.46, blue:0.46, alpha:1.0)
+            cell.imageDot.backgroundColor = UIColor(red:1.00, green:0.46, blue:0.46, alpha:1.0)
         }
+//        cell.imageDot.layer.bounds.insetBy(dx: 20, dy: 20)
+//        cell.imageDot.frame.width = CGFloat(15)
+        cell.imageDot.layer.cornerRadius = cell.imageDot.frame.height / 2
+        cell.imageDot.layer.masksToBounds = true;
         return cell
     }
     
