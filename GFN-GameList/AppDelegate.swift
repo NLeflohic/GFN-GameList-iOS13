@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,8 +16,35 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        print (NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).last! as String)
+        print (Realm.Configuration.defaultConfiguration.fileURL as Any)
+        
+        let config = Realm.Configuration(shouldCompactOnLaunch: { totalBytes, usedBytes in
+            // totalBytes refers to the size of the file on disk in bytes (data + free space)
+            // usedBytes refers to the number of bytes used by data in the file
+
+            // Compact if the file is over 10MB in size and less than 50% 'used'
+            let oneHundredMB = 10 * 1024 * 1024
+            print ("used : \(usedBytes) total : \(totalBytes)")
+            let exceed = (totalBytes > oneHundredMB) && (Double(usedBytes) / Double(totalBytes)) < 0.5
+            print (exceed)
+            return exceed
+        })
+        Realm.Configuration.defaultConfiguration = config
+
+        do {
+            print ("launch realm")
+            let _ = try Realm(configuration: config)
+        } catch {
+            print (error.localizedDescription)
+        }
+
         return true
     }
+    
+    func applicationWillTerminate(_ application: UIApplication) {
+
+        }
 
     // MARK: UISceneSession Lifecycle
 
@@ -31,7 +59,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
-
-
 }
+
+
 

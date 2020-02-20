@@ -1,0 +1,6 @@
+framework module Pods_GFN_GameList {
+  umbrella header "Pods-GFN-GameList-umbrella.h"
+
+  export *
+  module * { export * }
+}

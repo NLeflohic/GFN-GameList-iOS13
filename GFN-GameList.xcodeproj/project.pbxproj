@@ -3,27 +3,60 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2200124923F434B000A6EA57 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2200124823F434B000A6EA57 /* WebViewController.swift */; };
+		224F4C4223F3030100498E91 /* GameRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224F4C4123F3030100498E91 /* GameRealm.swift */; };
+		22D997CA23F2C45B00EACA14 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D997C923F2C45B00EACA14 /* InitialViewController.swift */; };
 		22E8058E23F2B9B600D3F395 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E8058D23F2B9B600D3F395 /* AppDelegate.swift */; };
 		22E8059023F2B9B600D3F395 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E8058F23F2B9B600D3F395 /* SceneDelegate.swift */; };
-		22E8059223F2B9B600D3F395 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E8059123F2B9B600D3F395 /* ViewController.swift */; };
 		22E8059523F2B9B600D3F395 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22E8059323F2B9B600D3F395 /* Main.storyboard */; };
 		22E8059723F2B9B700D3F395 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22E8059623F2B9B700D3F395 /* Assets.xcassets */; };
 		22E8059A23F2B9B700D3F395 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22E8059823F2B9B700D3F395 /* LaunchScreen.storyboard */; };
+		22E805A523F2BA5F00D3F395 /* GameList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E805A423F2BA5F00D3F395 /* GameList.swift */; };
+		22E805A723F2BBFB00D3F395 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E805A623F2BBFB00D3F395 /* Constants.swift */; };
+		22E805A923F2BFAE00D3F395 /* GameListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E805A823F2BFAE00D3F395 /* GameListManager.swift */; };
+		22E8BE0123FAFBF2001C538E /* Pods_GFN_GameList.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 39F3F99CAD2DB0E0538B8637 /* Pods_GFN_GameList.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		22FF1A5023F2E87300A0AC0F /* GameDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FF1A4F23F2E87300A0AC0F /* GameDetailController.swift */; };
+		5092A3295075D220CFB910E9 /* Pods_GFN_GameList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39F3F99CAD2DB0E0538B8637 /* Pods_GFN_GameList.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		2271D72E23F4629B00E36DF0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				22E8BE0123FAFBF2001C538E /* Pods_GFN_GameList.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		2200124823F434B000A6EA57 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		224F4C4123F3030100498E91 /* GameRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRealm.swift; sourceTree = "<group>"; };
+		2253AF1E23F4675400BEDA2D /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2253AF2123F4675A00BEDA2D /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22D997C923F2C45B00EACA14 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		22E8058A23F2B9B600D3F395 /* GFN-GameList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GFN-GameList.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22E8058D23F2B9B600D3F395 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22E8058F23F2B9B600D3F395 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		22E8059123F2B9B600D3F395 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		22E8059423F2B9B600D3F395 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		22E8059623F2B9B700D3F395 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22E8059923F2B9B700D3F395 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22E8059B23F2B9B700D3F395 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22E805A423F2BA5F00D3F395 /* GameList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameList.swift; sourceTree = "<group>"; };
+		22E805A623F2BBFB00D3F395 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		22E805A823F2BFAE00D3F395 /* GameListManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameListManager.swift; sourceTree = "<group>"; };
+		22FF1A4F23F2E87300A0AC0F /* GameDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GameDetailController.swift; path = "GFN-GameList/GameDetailController.swift"; sourceTree = SOURCE_ROOT; };
+		24DFD742257A965C3C3C1CAB /* Pods-GFN-GameList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GFN-GameList.debug.xcconfig"; path = "Target Support Files/Pods-GFN-GameList/Pods-GFN-GameList.debug.xcconfig"; sourceTree = "<group>"; };
+		39F3F99CAD2DB0E0538B8637 /* Pods_GFN_GameList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GFN_GameList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52F7A7738B9C8589D1291E47 /* Pods-GFN-GameList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GFN-GameList.release.xcconfig"; path = "Target Support Files/Pods-GFN-GameList/Pods-GFN-GameList.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +64,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5092A3295075D220CFB910E9 /* Pods_GFN_GameList.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2259589523F4788B00B63615 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
 		22E8058123F2B9B600D3F395 = {
 			isa = PBXGroup;
 			children = (
 				22E8058C23F2B9B600D3F395 /* GFN-GameList */,
 				22E8058B23F2B9B600D3F395 /* Products */,
+				2572060EA06C2994B1D00F6E /* Pods */,
+				D0501083FA02F8BE02BFC489 /* Frameworks */,
+				2259589523F4788B00B63615 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +102,62 @@
 			children = (
 				22E8058D23F2B9B600D3F395 /* AppDelegate.swift */,
 				22E8058F23F2B9B600D3F395 /* SceneDelegate.swift */,
-				22E8059123F2B9B600D3F395 /* ViewController.swift */,
-				22E8059323F2B9B600D3F395 /* Main.storyboard */,
+				22E805A323F2B9F800D3F395 /* Models */,
+				22E805A223F2B9E300D3F395 /* Controllers */,
+				22E805A123F2B9D200D3F395 /* Views */,
 				22E8059623F2B9B700D3F395 /* Assets.xcassets */,
 				22E8059823F2B9B700D3F395 /* LaunchScreen.storyboard */,
 				22E8059B23F2B9B700D3F395 /* Info.plist */,
+				22E805A623F2BBFB00D3F395 /* Constants.swift */,
 			);
 			path = "GFN-GameList";
+			sourceTree = "<group>";
+		};
+		22E805A123F2B9D200D3F395 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				22E8059323F2B9B600D3F395 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		22E805A223F2B9E300D3F395 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				22FF1A4F23F2E87300A0AC0F /* GameDetailController.swift */,
+				22D997C923F2C45B00EACA14 /* InitialViewController.swift */,
+				2200124823F434B000A6EA57 /* WebViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		22E805A323F2B9F800D3F395 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				22E805A423F2BA5F00D3F395 /* GameList.swift */,
+				22E805A823F2BFAE00D3F395 /* GameListManager.swift */,
+				224F4C4123F3030100498E91 /* GameRealm.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2572060EA06C2994B1D00F6E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				24DFD742257A965C3C3C1CAB /* Pods-GFN-GameList.debug.xcconfig */,
+				52F7A7738B9C8589D1291E47 /* Pods-GFN-GameList.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D0501083FA02F8BE02BFC489 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2253AF2123F4675A00BEDA2D /* Realm.framework */,
+				2253AF1E23F4675400BEDA2D /* RealmSwift.framework */,
+				39F3F99CAD2DB0E0538B8637 /* Pods_GFN_GameList.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +167,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 22E8059E23F2B9B700D3F395 /* Build configuration list for PBXNativeTarget "GFN-GameList" */;
 			buildPhases = (
+				4D8D1C319978364CA683BFF1 /* [CP] Check Pods Manifest.lock */,
 				22E8058623F2B9B600D3F395 /* Sources */,
 				22E8058723F2B9B600D3F395 /* Frameworks */,
 				22E8058823F2B9B600D3F395 /* Resources */,
+				2271D72E23F4629B00E36DF0 /* Embed Frameworks */,
+				D947D4DAA313D1095161D589 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -103,7 +199,7 @@
 				};
 			};
 			buildConfigurationList = 22E8058523F2B9B600D3F395 /* Build configuration list for PBXProject "GFN-GameList" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 11.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -133,14 +229,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4D8D1C319978364CA683BFF1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GFN-GameList-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D947D4DAA313D1095161D589 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GFN-GameList/Pods-GFN-GameList-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GFN-GameList/Pods-GFN-GameList-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GFN-GameList/Pods-GFN-GameList-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		22E8058623F2B9B600D3F395 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22E8059223F2B9B600D3F395 /* ViewController.swift in Sources */,
+				22E805A723F2BBFB00D3F395 /* Constants.swift in Sources */,
+				2200124923F434B000A6EA57 /* WebViewController.swift in Sources */,
 				22E8058E23F2B9B600D3F395 /* AppDelegate.swift in Sources */,
+				22D997CA23F2C45B00EACA14 /* InitialViewController.swift in Sources */,
+				22E805A923F2BFAE00D3F395 /* GameListManager.swift in Sources */,
 				22E8059023F2B9B600D3F395 /* SceneDelegate.swift in Sources */,
+				224F4C4223F3030100498E91 /* GameRealm.swift in Sources */,
+				22FF1A5023F2E87300A0AC0F /* GameDetailController.swift in Sources */,
+				22E805A523F2BA5F00D3F395 /* GameList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,11 +426,15 @@
 		};
 		22E8059F23F2B9B700D3F395 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DFD742257A965C3C3C1CAB /* Pods-GFN-GameList.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8P4TRCL7N7;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				INFOPLIST_FILE = "GFN-GameList/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,17 +448,28 @@
 		};
 		22E805A023F2B9B700D3F395 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52F7A7738B9C8589D1291E47 /* Pods-GFN-GameList.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8P4TRCL7N7;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Realm\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RealmSwift\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RealmSwift/RealmSwift\"",
+				);
 				INFOPLIST_FILE = "GFN-GameList/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nicosoft.GFNGL.GFN-GameList";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicosoft.GFNGL;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
