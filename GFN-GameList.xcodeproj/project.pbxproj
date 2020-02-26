@@ -44,6 +44,7 @@
 		224F4C4123F3030100498E91 /* GameRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRealm.swift; sourceTree = "<group>"; };
 		2253AF1E23F4675400BEDA2D /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2253AF2123F4675A00BEDA2D /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		228163BF24070FEA0049A8E3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		22D997C923F2C45B00EACA14 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		22E8058A23F2B9B600D3F395 /* GFN-GameList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GFN-GameList.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22E8058D23F2B9B600D3F395 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +84,7 @@
 		22E8058123F2B9B600D3F395 = {
 			isa = PBXGroup;
 			children = (
+				228163BF24070FEA0049A8E3 /* README.md */,
 				22E8058C23F2B9B600D3F395 /* GFN-GameList */,
 				22E8058B23F2B9B600D3F395 /* Products */,
 				2572060EA06C2994B1D00F6E /* Pods */,
