@@ -58,6 +58,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="sMt-1y-h0S">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.46666666670000001" green="0.72549019609999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <attributedString key="attributedTitle"/>
@@ -170,9 +171,8 @@
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
-                            <activityIndicatorView autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="v2R-0g-azh">
-                                <rect key="frame" x="188" y="429" width="37" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <activityIndicatorView autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="v2R-0g-azh">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
                                 <color key="color" red="0.46666666670000001" green="0.72549019609999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </activityIndicatorView>
                         </subviews>
@@ -180,7 +180,9 @@
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="Fe7-qj-ocj" secondAttribute="bottom" id="7GW-nd-WZ0"/>
                             <constraint firstItem="Fe7-qj-ocj" firstAttribute="leading" secondItem="Hn4-1N-Q84" secondAttribute="leading" id="BAs-zT-Edp"/>
+                            <constraint firstItem="v2R-0g-azh" firstAttribute="centerY" secondItem="1hd-pJ-jQe" secondAttribute="centerY" id="Cwz-Zl-1Ws"/>
                             <constraint firstItem="Fe7-qj-ocj" firstAttribute="top" secondItem="Hn4-1N-Q84" secondAttribute="top" id="Rgm-Wz-NGD"/>
+                            <constraint firstItem="v2R-0g-azh" firstAttribute="centerX" secondItem="1hd-pJ-jQe" secondAttribute="centerX" id="iDo-g4-gKi"/>
                             <constraint firstItem="Fe7-qj-ocj" firstAttribute="trailing" secondItem="Hn4-1N-Q84" secondAttribute="trailing" id="kK8-oV-j6X"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Hn4-1N-Q84"/>
