@@ -1,6 +1,6 @@
 #  GFN-GameList 
 An app for tracking the list of games supported by NVidia GeForce NOW.<br/>
-Due to actual bug in iOS 13.3.1, the app could not be test on a real device.
+Due to actual bug in iOS 13.3.1, the app could not be test on a real device with free developer account.
 cf : https://forums.developer.apple.com/message/404653#404653
 
 <p align="center"><img src="https://media.giphy.com/media/XzjWhqExw5P4TThyjA/source.gif" alt="demo"/></p>
