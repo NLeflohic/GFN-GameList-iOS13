@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,18 +12,18 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Nvidia_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="01e-9I-pJB">
-                                <rect key="frame" x="113.5" y="354.5" width="187" height="187"/>
+                                <rect key="frame" x="113.66666666666669" y="274.66666666666669" width="187" height="187"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="187" id="ckL-Kq-iRu"/>
                                     <constraint firstAttribute="width" constant="187" id="mLV-Ks-gRG"/>
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.10196078431372549" green="0.10196078431372549" blue="0.10196078431372549" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="01e-9I-pJB" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="FJy-21-bcD"/>
                             <constraint firstItem="01e-9I-pJB" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="kyz-7V-tXu"/>

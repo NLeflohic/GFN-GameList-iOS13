@@ -12,6 +12,7 @@ import RealmSwift
 class InitialViewController: UITableViewController {
 
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    
     var gameListManager = GameListManager()
     var gameList = GameList(list: [GameRealm]())
     var firstLetterGames = Folder()
@@ -25,10 +26,8 @@ class InitialViewController: UITableViewController {
 
         DispatchQueue.main.async {
             if self.isDatePassed(of: K.nbDaysBetweenSaves) {
-                try! self.realm.write {
-                    self.realm.deleteAll()
-                self.gameListManager.fetchData()
-                }
+                print ("date passed")
+                self.refreshData()
             } else {
                 let results = self.realm.objects(GameRealm.self)
                 if results.count == 0 {
@@ -40,6 +39,7 @@ class InitialViewController: UITableViewController {
                 }
                 self.updateNavBar (nbOfGames: results.count)
             }
+            print ("reload tableview")
             self.tableView.reloadData()
         }
     }
@@ -80,11 +80,30 @@ class InitialViewController: UITableViewController {
         return gameRealm
     }
     
+    func refreshData () {
+        try! realm.write {
+            realm.deleteAll()
+        }
+        gameListManager.fetchData()
+    }
+    
+    @IBAction func refresh(_ sender: UIRefreshControl) {
+        DispatchQueue.main.async {
+            self.refreshData()
+            sender.endRefreshing()
+            self.tableView.reloadData()
+        }
+    }
+    
+    
 }
 
 extension InitialViewController: GameListDelegate {
     func didUpdateFinished(for data: [GameRealm]) {
         activityIndicator.startAnimating()
+        
+        firstLetterGames.reinitList()
+        
         self.gameList.list = data
         for game in gameList.list {
             firstLetterGames.addGame (game : game)
@@ -107,7 +126,7 @@ extension InitialViewController: GameListDelegate {
     
     func updateNavBar (nbOfGames: Int) {
         let nbGamesStr = String(nbOfGames)
-        navigationItem.title = "\(navigationItem.title ?? K.appTitle)  (\(nbGamesStr) Games)"
+        navigationItem.title = "\(K.appTitle)  (\(nbGamesStr) Games)"
     }
     
     func getDate () -> String {
@@ -120,10 +139,12 @@ extension InitialViewController: GameListDelegate {
         let formatter = DateFormatter()
         formatter.dateFormat = K.formatDate
         let currentDate = Date()
-        let lastSaveDate = defaults.string(forKey: "GFN_LastSave")
-        guard let newDate = Calendar.current.date(byAdding: .day, value: nbOfDays, to:formatter.date(from: lastSaveDate!)!) else {
-            fatalError("Error while calculating date")
+        if let lastSaveDate = defaults.string(forKey: "GFN_LastSave") {
+            guard let newDate = Calendar.current.date(byAdding: .day, value: nbOfDays, to:formatter.date(from: lastSaveDate)!) else {
+                fatalError("Error while calculating date")
+            }
+            return currentDate > newDate
         }
-        return currentDate > newDate
+        return false
     }
 }

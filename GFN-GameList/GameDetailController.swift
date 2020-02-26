@@ -80,7 +80,7 @@ class GameDetailController: UITableViewController {
         if let indexPath = tableView.indexPathForSelectedRow {
             if let destUrl = currentDetailGameList?[indexPath.row].steamUrl {
                 if destUrl == "" {
-                    let alert = UIAlertController(title: "Warning", message: "No url attached to the game", preferredStyle: .alert)
+                    let alert = UIAlertController(title: "Warning", message: "No url specified !", preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: "Ok", style: .cancel, handler: nil))
                     self.present(alert, animated: true, completion: nil)
                     return false

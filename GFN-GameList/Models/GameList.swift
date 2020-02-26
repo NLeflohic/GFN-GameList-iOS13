@@ -54,6 +54,10 @@ struct Folder {
         }
     }
     
+    mutating func reinitList() {
+        list = []
+    }
+    
     func ascSortList () -> [GamesFolders]{
         return list.sorted(by: {
             if let char1 = $0.letter {
