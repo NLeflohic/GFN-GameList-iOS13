@@ -10,8 +10,8 @@ cf : https://forums.developer.apple.com/message/404653#404653
 1) Download the repository
 
 ```
-$ git clone https://github.com/NLeflohic/GFN-GameList.git
-$ cd GFN-GameList
+$ git clone https://github.com/NLeflohic/GFN-GameList-iOS13.git
+$ cd GFN-GameList-iOS13
 ```
 
 2) Open the project in Xcode
@@ -28,7 +28,7 @@ $ open GFN-GameList.xcworkspace
 * UserDefaults
 * WKWebView
 * Delegate protocol
-* [Realm](https://realm.io) 
+* [Realm](https://realm.io) : https://realm.io 
 
 
 
